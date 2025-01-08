@@ -5,17 +5,12 @@ from torch.utils.data import DataLoader
 
 from classes.streetsign_dataset import StreetsignDataset
 from utils.data_reader import get_training_testing_data_2
-from utils.tensors import load_image_tensors, create_and_save_tensors
+from utils.tensors import load_image_tensors
 
-imgs_path = abspath(join(dirname(__file__), "..", "data", "processed"))
 tensors_path = abspath(join(dirname(__file__), "..", "data", "tensors"))
-model_save_path = abspath(join(dirname(__file__), ".." ,"data", "models"))
 
 img_size = (25, 25)
 if __name__ == '__main__':
-    # create image tensors
-    # create_and_save_tensors(imgs_path, tensors_path)
-
     # load precalculated tensors
     tensors = load_image_tensors(tensors_path)
 
