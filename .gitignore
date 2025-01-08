@@ -1,0 +1,8 @@
+.vsc
+.vscode
+.venv
+
+data
+
+# ignore all files in src that start with an underscore
+src/**/_* 
