@@ -14,9 +14,11 @@ concept_map_reversed2 = {
     'STOP': 0,
     'VORFAHRT_GEWAEHREN': 1,
     'VORFAHRT_VON_RECHTS': 2,
+    'VORFAHRT_RECHTS': 2,
     'FAHRTRICHTUNG_RECHTS': 3,
     'FAHRTRICHTUNG_LINKS': 4,
-    'VORFAHRTSSTRASSE': 5
+    'VORFAHRTSSTRASSE': 5,
+    'VORFAHRTSSTRAßE': 5
 }
 
 def load_json_file(filename: str) -> json:
