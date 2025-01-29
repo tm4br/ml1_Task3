@@ -3,20 +3,17 @@ import random
 
 concept_map_reversed = {
     'Stop': 0,
-    'Vorfahrt gewahren': 1,
-    'Vorfahrt von rechts': 2,
-    'Fahrtrichtung rechts': 3,
-    'Fahrtrichtung links': 4,
-    'Vorfahrtsstrasse': 5
-}
-
-concept_map_reversed2 = {
     'STOP': 0,
+    'Vorfahrt gewahren': 1,
     'VORFAHRT_GEWAEHREN': 1,
+    'Vorfahrt von rechts': 2,
     'VORFAHRT_VON_RECHTS': 2,
     'VORFAHRT_RECHTS': 2,
+    'Fahrtrichtung rechts': 3,
     'FAHRTRICHTUNG_RECHTS': 3,
+    'Fahrtrichtung links': 4,
     'FAHRTRICHTUNG_LINKS': 4,
+    'Vorfahrtsstrasse': 5,
     'VORFAHRTSSTRASSE': 5,
     'VORFAHRTSSTRAßE': 5
 }
@@ -38,7 +35,7 @@ def vector2list(all_vectors, data):
 
         if any(value != 0 for value in vector):
             sign_name = sign.get('classification', '')
-            sign_id = concept_map_reversed2.get(sign_name, -1)
+            sign_id = concept_map_reversed.get(sign_name, -1)
             all_vectors.append((sign_id, vector))
 
 
